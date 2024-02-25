@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/styles/style.css">
+    <link rel="stylesheet" href="./static/styles/responsive.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <h1>HomeTech</h1>
+            <a href="index_fr.html" onclick="loadPage('index_fr.html'); return false;">Accueil</a>
+            <a href="componentes_fr.html" onclick="loadPage('componentes_fr.html'); return false;">Composants</a>
+            <a href="conexiones_fr.html" onclick="loadPage('conexiones_fr.html'); return false;">Connexions</a>
+            <a href="about_fr.html" onclick="loadPage('about_fr.html'); return false;">À Propos</a>
+            <select id="languageSelector" onchange="changeLanguage(this.value)">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr" selected>Français</option>
+            </select>
+        </menu>
+    </header>
+
+    <div class="container">
+        <h1 id="componentesTitulo">Composants du Projet</h1>
+        <p id="componentesTexto">Vous pouvez trouver ici une liste des composants utilisés dans notre projet :</p>
+        <ul>
+            <li><a href="https://articulo.mercadolibre.com.mx/MLM-1330523256-4-piezas-camara-vga-ov7670-640x480-arduino-pic-raspberry-_JM?quantity=1" id="camaraLink">Caméra Vga Ov7670 640x480 Arduino Pic Raspberry</a></li>
+            <li><a href="https://articulo.mercadolibre.com.mx/MLM-1468036969-esp32cam-esp32-con-camara-arduino-wifi-y-convertidor-usb-ttl-_JM?quantity=1" id="esp32camLink">Esp32cam Esp32 Avec Caméra Arduino Wifi Et Convertisseur Usb Ttl</a></li>
+            <li><a href="https://articulo.mercadolibre.com.mx/MLM-1520049306-nodemcu-esp32-wifi-ch340g-usb-c-shield-placa-expansion-30p-_JM?quantity=1" id="nodemcuLink">Nodemcu Esp32 Wifi Ch340g Usb-c + Carte D'extension Shield 30p</a></li>
+            <li><a href="https://articulo.mercadolibre.com.mx/MLM-755243517-mq-2-modulo-sensor-de-gas-lp-propano-butano-humo-y-otros-mq2-_JM?quantity=1" id="mq2Link">Module Mq-2 Capteur De Gaz Lp Propane Butane Fumée Et Autres Mq2</a></li>
+            <li><a href="https://articulo.mercadolibre.com.mx/MLM-797535002-sensor-pir-hc-sr501-detector-de-movimiento-compatible-arduin-_JM?quantity=1" id="pirLink">Capteur Pir Hc-sr501 Détecteur De Mouvement Compatible Arduino</a></li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:info@hometech.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="tel:+123456789"><i class="fas fa-phone"></i> Call</a>
+        </div>
+    </footer>
+    <script src="lenguaje.js"></script>
+</body>
+</html>

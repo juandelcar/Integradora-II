@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+.componentes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.componente-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.componente-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.componente-item h3 {
+    margin: 10px 0;
+}
+
+.componente-item p {
+    font-size: 0.9em;
+    color: #666;
+}

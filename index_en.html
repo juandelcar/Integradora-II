@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/styles/style.css">
+    <link rel="stylesheet" href="./static/styles/responsive.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <h1>HomeTech</h1>
+            <a href="index_en.html" onclick="loadPage('index_en.html'); return false;">Home</a>
+            <a href="componentes_en.html" onclick="loadPage('componentes_en.html'); return false;">Components</a>
+            <a href="conexiones_en.html" onclick="loadPage('conexiones_en.html'); return false;">Connections</a>
+            <a href="about_en.html" onclick="loadPage('about_en.html'); return false;">About</a>
+            <select id="languageSelector" onchange="changeLanguage(this.value)">
+                <option value="es">Español</option>
+                <option value="en" selected>English</option>
+                <option value="fr">Français</option>
+            </select>
+        </menu>
+    </header>
+
+    <div class="container">
+
+    </div>
+
+    <footer>
+        <h1>Contact</h1>
+        <p>Phone: 123-456-789</p>
+        <p>Email: info@hometech.com</p>
+    </footer>
+
+    <script src="lenguaje.js"></script> 
+</body>
+</html>

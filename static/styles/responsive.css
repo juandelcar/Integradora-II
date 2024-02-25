@@ -1,0 +1,35 @@
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    menu {
+        flex-direction: column; /* Cambia la dirección de los elementos del menú a vertical */
+        padding: 0 10px; /* Añade un poco de padding a los lados */
+    }
+    menu a {
+        margin: 10px 0; /* Aumenta el espacio vertical entre enlaces */
+    }
+    .footer-links {
+        flex-direction: column; /* Alinea los enlaces verticalmente */
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    menu {
+        width: 90%; /* Aumenta el ancho del menú */
+    }
+    .footer-links {
+        gap: 10px; /* Reduce el espacio entre los enlaces */
+    }
+}
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    menu {
+        width: 80%; /* Mantiene el ancho original para pantallas grandes */
+    }
+    .footer-links {
+        gap: 20px; /* Espacio original entre los enlaces */
+    }
+}
